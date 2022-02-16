@@ -1,5 +1,5 @@
 <title>Exercice9</title>
-<link rel="stylesheet" href="../Exercice2/css/style.css">
+<link rel="stylesheet" href="../Exercice5/css/style.css">
     <div id=correction>
         <h1>
 <?php 
@@ -28,3 +28,8 @@ session_start();
 ?>
         </h1>
     </div>
+
+    <div class="Exercice">
+    <a href="../Exercice9/index.php">Prev</a>
+    <a href="../Exercice11/index.php">next</a>
+  </div>

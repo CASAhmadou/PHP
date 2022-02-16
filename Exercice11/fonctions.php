@@ -13,6 +13,8 @@ function prem($n):bool{
 }
 
 function tab_asso($n, &$t){
+
+  if ($n>=10000) { 
   $t=["prem" =>[],"inf" =>[],"sup"=>[]];
   $som=0;
   $nbr=0;
@@ -24,24 +26,28 @@ function tab_asso($n, &$t){
             $nbr++;           
         }   
     }
-    echo "L'ensemble des nombres premiers".'<br>';
+     echo "L'ensemble des nombres premiers".'<br><br>';
     for($i=0;$i<$nbr;$i++)
         echo $t["prem"][$i].'    ';
         echo '<br><br><br>';
     
-        echo "L'ensemble des nombres inférieurs".'<br>';
+        echo "L'ensemble des nombres inférieurs".'<br><br>';
     for ($i=0; $i<=$n ; $i++)
         if ($i<=$som/$n) 
             echo $t["inf"][$j]=$i.'  '; 
-               
-    echo '<br><br><br>';  
-    echo "L'ensemble des nombres supérieurs".'<br>'; 
+            echo '<br><br><br>';  
+      
+    echo "L'ensemble des nombres supérieurs".'<br><br>'; 
     for ($i=0; $i<=$n ; $i++){
         if($i>$som/$n){
            echo $t["sup"][$j]=$i.'  ';    
         }   
     }
-
+    
+}
+else{
+    echo "invalide, le nombre doit etre supérieur à 10000";
+}
 }
           
 ?>

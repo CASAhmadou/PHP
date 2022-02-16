@@ -21,6 +21,21 @@ function valid($j,$m,$a):bool{
     return($j<=nbrj($m,$a));
 }
 
+    function precedent($j,$m,$a){
+        if (valid($j,$m,$a)) {
+            if ($j!=1) {
+                $j--;           
+            }elseif ($m==1) {
+                $j=31 && $m=12 && $a--;
+            }else{
+                $j=nbrj($m-1,$a);
+                $m--;
+            }
+        }
+    echo "La date pécédente est <br>".$j." / ".$m." / ".$a. "<br><br>";
+}
+
+
 function suivant($j,$m,$a){
     if (valid($j,$m,$a)) {
         if ($j==nbrj($m,$a)) {
@@ -36,21 +51,7 @@ function suivant($j,$m,$a){
             $j++;
         } 
     }
-    echo $j."/".$m."/".$a;
-}
-
-function precedent($j,$m,$a){
-    if (valid($j,$m,$a)) {
-        if ($j!=1) {
-            $j--;           
-        }elseif ($m==1) {
-            $j=31 && $m=12 && $a--;
-        }else{
-            $j=nbrj($m-1,$a);
-            $m--;
-        }
-    }
-    echo $j."/".$m."/".$a."<br><br>";
+    echo "La date suivante est <br>".$j." / ".$m." / ".$a;
 }
 ?>
 

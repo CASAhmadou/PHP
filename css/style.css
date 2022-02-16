@@ -18,6 +18,7 @@ body {
 #centre{
     width: 100%;
     height: 80vh;
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(frok.jpg);
     display: grid;
     grid-template-columns: 200px 1fr;
 }

@@ -3,10 +3,21 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(frok.jpg);
-    background-size: 75%;
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(dev.jpg);
+    background-size: cover;
     background-position: center;
     font-family: sans-serif;
+}
+.img{
+    height: 4.5vh;
+    float: left;
+    position: relative;
+    margin-top: -90px;
+}
+img{
+    margin-top: 4vw;
+    height: 12vh;
+    
 }
 #correction{
     height: 100vh;

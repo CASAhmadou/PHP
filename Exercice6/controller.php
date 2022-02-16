@@ -1,3 +1,7 @@
+
+<link rel="stylesheet" href="../Exercice5/css/style.css">
+
+<h1>
 <?php 
 include("../fonctions/note.php");
 include_once("fonctions.php");
@@ -27,3 +31,9 @@ if(isset($_POST['btn_ok'])){
     exit();
 }
 ?>
+</h1>
+
+<div class="Exercice">
+    <a href="../Exercice6/index.php">Prev</a>
+    <a href="../Exercice7/index.php">next</a>
+  </div>    

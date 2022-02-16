@@ -1,5 +1,9 @@
 <title>Exercice11</title>
-    <link rel="stylesheet" href="../Exercice2/css/style.css">
+    <link rel="stylesheet" href="../Exercice7/css/style.css">
+
+    
+    <div class="img"><img src="../Exercice7/css/logo.jpg" alt=""></div>
+  <img src="../Exercice7/css/log.png" alt="#"><br>
     <div id=correction>
         <h1>
 <?php
@@ -15,12 +19,12 @@
             <span style="color:brown"><?php echo $_SESSION['error']['valeur'] ?></span>
             <?php session_unset(); endif ?><br>
 
-     <input type="submit" name="accepte" value="accepte">
+     <input type="submit" class="submit" name="accepte" value="accepte"><b></b>
 
 </form>
 </h1>
 <div class=Exercice>
-  <a href="../Exercice9/index.php">Précédent</a>
-    <a href="../Exercice11/index.php">Suivant</a>
+  <a href="../Exercice9/index.php">Prev</a>
+    <a href="../Exercice11/index.php">next</a>
   </div>   
-    </div>
+</div>
